@@ -13,6 +13,8 @@
 #include "AForm.hpp"
 #include "Bureaucrat.hpp"
 
+AForm::AForm() : _name("default"), _isSigned(false), _gradeToSign(1), _gradeToExec(1) {}
+
 AForm::AForm(const std::string& name, const int gradeToSign, const int gradeToExec)
 	: _name(name), _isSigned(false), _gradeToSign(gradeToSign), _gradeToExec(gradeToExec)
 {
@@ -60,6 +62,22 @@ const char* AForm::GradeTooLowException::what() const throw()
 {
 	return "Grade too low";
 }
+
+const char* AForm::FormNotSignedException::what() const throw()
+{
+	return "Form not signed";
+}
+
+AForm &AForm::operator=(AForm const &ref)
+{
+	if (this != &ref)
+		_isSigned = ref.getIsSigned();
+	return (*this);
+}
+
+AForm::AForm(AForm const &ref)
+	: _name(ref.getName()), _isSigned(ref.getIsSigned()),
+	  _gradeToSign(ref.getGradeToSign()), _gradeToExec(ref.getGradeToExec()) {}
 
 std::ostream& operator<<(std::ostream& out, const AForm& AForm)
 {

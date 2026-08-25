@@ -6,7 +6,7 @@
 #    By: afournie <afournie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/08/20 11:54:43 by afournie          #+#    #+#              #
-#    Updated: 2026/08/22 19:30:46 by afournie         ###   ########.fr        #
+#    Updated: 2026/08/25 14:38:02 by afournie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,15 +16,15 @@ OBJ_DIR		= obj
 SRC			= main.cpp					\
 			  Bureaucrat.cpp			\
 			  AForm.cpp					\
-			  PresidentialPardonForm.cpp\
 			  ShrubberyCreationForm.cpp \
-			  RobotomyRequestForm.cpp	\
+#  			  PresidentialPardonForm.cpp\
+ 			  RobotomyRequestForm.cpp	\
 
 INC			= Bureaucrat.hpp	\
 			  AForm.hpp			\
-			  PresidentialPardonForm.hpp\
 			  ShrubberyCreationForm.hpp \
-			  RobotomyRequestForm.hpp	\
+# 			  PresidentialPardonForm.hpp\
+ 			  RobotomyRequestForm.hpp	\
 
 OBJ			= $(SRC:%.cpp=$(OBJ_DIR)/%.o)
 

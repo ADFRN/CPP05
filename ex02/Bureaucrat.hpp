@@ -6,7 +6,7 @@
 /*   By: afournie <afournie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/20 11:54:38 by afournie          #+#    #+#             */
-/*   Updated: 2026/08/22 19:26:08 by afournie         ###   ########.fr       */
+/*   Updated: 2026/08/25 14:33:04 by afournie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,8 @@ class Bureaucrat
 		void incrementGrade();
 		void decrementGrade();
 
-		void signAForm(AForm& AForm);
+		void signForm(AForm& AForm);
+		void executeForm(AForm& AForm);
 
 		class GradeTooHighException : public std::exception
 		{

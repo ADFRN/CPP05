@@ -6,20 +6,33 @@
 /*   By: afournie <afournie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/22 19:29:22 by afournie          #+#    #+#             */
-/*   Updated: 2026/08/22 19:29:23 by afournie         ###   ########.fr       */
+/*   Updated: 2026/08/25 13:57:25 by afournie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SHRUBBERYCREATIONFORM_HPP
 #define SHRUBBERYCREATIONFORM_HPP
 
-class	ShrubberyCreationForm
+#include "AForm.hpp"
+#include <iostream>
+#include <fstream>
+
+class	ShrubberyCreationForm : public AForm
 {
+	private:
+		std::string _target;
+
+		ShrubberyCreationForm(void); // Private default for the othodox form
+
 	public:
-		ShrubberyCreationForm();
+		ShrubberyCreationForm(std::string target);
 		ShrubberyCreationForm(ShrubberyCreationForm const &ref);
 		ShrubberyCreationForm &operator=(ShrubberyCreationForm const &ref);
 		~ShrubberyCreationForm();
+
+		std::string getTarget() const;
+
+		void execute(Bureaucrat const & executor) const;
 };
 
 #endif
