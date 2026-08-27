@@ -6,7 +6,7 @@
 /*   By: afournie <afournie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/22 19:29:22 by afournie          #+#    #+#             */
-/*   Updated: 2026/08/25 13:57:25 by afournie         ###   ########.fr       */
+/*   Updated: 2026/08/27 12:30:50 by afournie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ class	ShrubberyCreationForm : public AForm
 {
 	private:
 		std::string _target;
-
 		ShrubberyCreationForm(void); // Private default for the othodox form
 
 	public:
