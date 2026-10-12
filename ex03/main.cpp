@@ -27,7 +27,7 @@ int main() {
 
 	std::cout << "\n----- Test 3: cycle complet (creation + signature + execution) -----" << std::endl;
 
-	Bureaucrat boss("Boss", 1); // grade assez haut pour tout signer/executer
+	Bureaucrat boss("Boss", 1);
 	AForm* rrf = intern.makeForm("robotomy request", "Bender");
 
 	if (rrf) {

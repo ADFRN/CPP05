@@ -6,7 +6,7 @@
 /*   By: afournie <afournie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/22 19:29:33 by afournie          #+#    #+#             */
-/*   Updated: 2026/08/27 12:30:59 by afournie         ###   ########.fr       */
+/*   Updated: 2026/10/12 15:31:32 by afournie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class	PresidentialPardonForm : public AForm
 {
 	private:
 		std::string _target;
-		PresidentialPardonForm(); // Private default for the othodox form
+		PresidentialPardonForm();
 
 	public:
 		PresidentialPardonForm(std::string target);

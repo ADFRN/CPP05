@@ -6,7 +6,7 @@
 /*   By: afournie <afournie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/22 19:29:27 by afournie          #+#    #+#             */
-/*   Updated: 2026/08/27 12:41:47 by afournie         ###   ########.fr       */
+/*   Updated: 2026/10/12 15:31:20 by afournie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ class	RobotomyRequestForm : public AForm
 {
 	private:
 		std::string _target;
-		RobotomyRequestForm(); // Private default for the othodox form
+		RobotomyRequestForm();
 
 	public:
 		RobotomyRequestForm(std::string target);
